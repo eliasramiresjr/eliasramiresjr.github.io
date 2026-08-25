@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elias Ramires Júnior — Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<canvas id="space-canvas" class="space-canvas"></canvas>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <a class="topbar-logo" href="#">Elias Ramires Júnior</a>
+    <div class="topbar-right">
+      <div class="lang-wrapper">
+        <div class="tooltip-container">
+          <button id="space-toggle" class="space-toggle" aria-label="Toggle WebGL Space" title="Toggle WebGL Space">⏾</button>
+          <div id="darkmode-tooltip" class="darkmode-tooltip">
+            <button id="darkmode-tooltip-close" class="lang-tooltip-close" aria-label="Close tooltip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div class="lang-tooltip-content">
+              <span class="lang-tooltip-title">Prefer dark mode? You can switch the site here.</span>
+              <span class="lang-tooltip-desc">Click to switch dark mode instantly</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tooltip-container">
+          <button id="lang-toggle" class="lang-toggle" aria-label="Translate to English" title="Translate to English">EN</button>
+          <div id="lang-tooltip" class="lang-tooltip">
+            <button id="lang-tooltip-close" class="lang-tooltip-close" aria-label="Close tooltip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div class="lang-tooltip-content">
+              <span class="lang-tooltip-title">Prefer English? You can switch the site here.</span>
+              <span class="lang-tooltip-desc">Click to switch language instantly</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clock-badge">
+        <span class="clock-dot"></span>
+        <span id="user-location">Localizando...</span> &nbsp;·&nbsp; <span id="clock">--:--</span>
+      </div>
+    </div>
+  </header>
+
+<div class="page">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <span class="available-tag">
+        <span class="available-dot"></span>
+        Disponível para Trabalho
+      </span>
+      <!-- <span class="unavailable-tag">
+        <span class="unavailable-dot"></span>
+        Indisponível para Trabalho
+      </span> -->
+
+      <h1 class="hero-name">Elias Ramires Júnior<br></h1>
+      <p class="hero-title">QA Automation Engineer | Robot Framework | Python | Appium | API Testing | Web & Mobile Testing | Jenkins | Software Quality</p>
+      <div class="hero-ctas">
+        <a class="btn btn-dark" href="#" onclick="downloadCV(event); return false;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download do CV
+        </a>
+        <a class="btn btn-outline" href="mailto:[EMAIL_ADDRESS]">Contato</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="section">
+    <p class="section-label">Sobre Mim</p>
+    <div class="section-text">
+      <p>Profissional de Quality Assurance (QA) com experiência em Testes Manuais e Automação de Testes para aplicações Web, Mobile (Android) e APIs REST. Atuo na criação e execução de testes Funcionais, Smoke, Regressão e End-to-End (E2E), elaboração de cenários e casos de teste, análise de requisitos, identificação e gestão de bugs e garantia da qualidade durante todo o ciclo de desenvolvimento.</p>
+      <p>Possuo experiência com Robot Framework, Python, Selenium, Appium, Jenkins, Jira, Confluence, Git e metodologias ágeis (Scrum e Kanban). Tenho foco em Quality Engineering, Test Automation, CI/CD, Continuous Testing e melhoria contínua dos processos, contribuindo para a entrega de software confiável, estável e de alta qualidade.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects-section">
+    <p class="section-label" data-translate="Projetos">Projetos</p>
+    <div class="projects-wrapper collapsed" id="projects-wrapper">
+      <div class="projects-grid" id="github-projects-container">
+        <p style="color: var(--ink-muted); font-size: 14px; grid-column: 1 / -1; text-align: center; padding: 20px;" data-translate="Carregando projetos do GitHub...">Carregando projetos do GitHub...</p>
+      </div>
+      <div class="projects-overlay" id="projects-overlay">
+        <button class="view-more-btn" id="view-more-projects-btn" data-translate="Ver mais">Ver mais</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section">
+    <p class="section-label">Experiências</p>
+    <div class="entries">
+
+      <div class="entry">
+        <div class="entry-icon"><span class="entry-icon-letter">F</span></div>
+        <div class="entry-body">
+          <span class="entry-org">Freelancer</span>
+          <h3 class="entry-role">Desenvolvedor de Sistemas</h3>
+          <p class="entry-desc">Desenvolvimento de sistemas por demanda, utilizando tecnologias como: Java, Python e Javascript. Integração com APIs e BDs. Uso de Frameworks como React, Node.js e SpringBoot. </p>
+          <div class="entry-meta">
+            <span class="entry-tag">📅 Março 2020 – Atual</span>
+            <span class="entry-tag">📍 Porto Ferreira, SP (Home-Office)</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section">
+    <p class="section-label">Educação</p>
+    <div class="entries">
+
+      <div class="entry">
+        <div class="entry-icon"><span class="entry-icon-letter">U</span></div>
+        <div class="entry-body">
+          <span class="entry-org">Unicesumar (Ensino à Distância - EaD)</span>
+          <h3 class="entry-role">Bacharelado em Análise e Desenvolvimento de Sistemas - Tecnologia em Informática</h3>
+          <p class="entry-desc">Formação voltada para desenvolvimento de software, lógica de programação e fundamentos de banco de dados. Aprendizado contínuo e aplicação prática.</p>
+          <div class="entry-meta">
+            <span class="entry-tag">📅 Outubro 2025 – Atual</span>
+            <span class="entry-tag">📍 Online - EaD</span>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section">
+    <p class="section-label">Cursos</p>
+    <div class="certs">
+      <a class="cert" href="https://www.udemy.com/" target="_blank">
+        <div>
+          <div class="cert-name">Django Web Framework com Python, HTML e CSS</div>
+          <div class="cert-date">Outubro 2025</div>
+        </div>
+        <span class="cert-arrow">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <!-- <section class="section">
+    <p class="section-label">Idiomas</p>
+    <div class="entries">
+      <div class="entry">
+        <div class="entry-icon"><span class="entry-icon-letter">I</span></div>
+        <div class="entry-body">
+          <span class="entry-org">Nível B1 - Conversação e Interpretação Textual</span>
+          <h3 class="entry-role">Inglês</h3>
+          <p class="entry-desc">Inglês intermediário</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- TOOLS -->
+  <section class="section">
+    <p class="section-label">Ferramentas</p>
+    <div class="tools-grid">
+
+      <a class="tool-card" href="https://developer.microsoft.com/pt-br/javascript/" target="_blank">
+        <div class="tool-icon"><img src="https://img.icons8.com/?size=28&id=PXTY4q2Sq2lG&format=png&color=000000" alt="Javascript"></div>
+        <div>
+          <div class="tool-name">Javascript</div>
+          <div class="tool-sub">Linguagem de Programação</div>
+        </div>
+      </a>
+
+      <a class="tool-card" href="https://www.python.org/" target="_blank">
+        <div class="tool-icon"><img src="https://img.icons8.com/?size=28&id=l75OEUJkPAk4&format=png&color=000000" alt="Python"></div>
+        <div>
+          <div class="tool-name">Python</div>
+          <div class="tool-sub">Linguagem de Programação</div>
+        </div>
+      </a>
+
+      <a class="tool-card" href="https://www.java.com/pt-BR/" target="_blank">
+        <div class="tool-icon"><img src="https://img.icons8.com/?size=28&id=Pd2x9GWu9ovX&format=png&color=000000" alt="Java"></div>
+        <div>
+          <div class="tool-name">Java</div>
+          <div class="tool-sub">Linguagem de Programação</div>
+        </div>
+      </a>
+      
+      <a class="tool-card" href="https://www.linux.org/" target="_blank">
+        <div class="tool-icon"><img src="https://img.icons8.com/?size=28&id=17842&format=png&color=000000" alt="Linux"></div>
+        <div>
+          <div class="tool-name">Linux</div>
+          <div class="tool-sub">Sistema Operacional</div>
+        </div>
+      </a>
+
+      <a class="tool-card" href="https://git-scm.com/" target="_blank">
+        <div class="tool-icon"><img src="https://img.icons8.com/?size=28&id=6Qr2kBSBemvq&format=png&color=000000" alt="Git"></div>
+        <div>
+          <div class="tool-name">Git</div>
+          <div class="tool-sub">Controle de Versão</div>
+        </div>
+      </a>
+
+      <a class="tool-card" href="https://github.com/eliasramiresjr" target="_blank">
+        <div class="tool-icon"><img src="https://img.icons8.com/?size=28&id=AZOZNnY73haj&format=png&color=000000" alt="Github"></div>
+        <div>
+          <div class="tool-name">Github</div>
+          <div class="tool-sub">Controle de Versão</div>
+        </div>
+      </a>
+
+      <!-- <a class="tool-card" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+        <div class="tool-icon"><img src="https://img.icons8.com/?size=28&id=v8RpPQUwv0N8&format=png&color=000000" alt="HTML"></div>
+        <div>
+          <div class="tool-name">HTML</div>
+          <div class="tool-sub">Linguagem de Marcação</div>
+        </div>
+      </a> -->
+
+      <!-- <a class="tool-card" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
+        <div class="tool-icon"><img src="https://img.icons8.com/?size=28&id=7gdY5qNXaKC0&format=png&color=000000" alt="CSS"></div>
+        <div>
+          <div class="tool-name">CSS</div>
+          <div class="tool-sub">Linguagem de Estilo</div>
+        </div>
+      </a> -->
+
+      <!-- <a class="tool-card" href="https://nodejs.org/en" target="_blank">
+        <div class="tool-icon"><img src="https://img.icons8.com/?size=28&id=hsPbhkOH4FMe&format=png&color=000000" alt="Node.js"></div>
+        <div>
+          <div class="tool-name">Node.js</div>
+          <div class="tool-sub">Ambiente de Execução</div>
+        </div>
+      </a> -->
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section">
+    <p class="section-label">Contato</p>
+    <div class="contact-grid">
+
+      <a class="contact-card" href="ramires_junior11@hotmail.com">
+        <div>
+          <div class="contact-label">E-mail</div>
+          <div class="contact-value">ramires_junior11@hotmail.com</div>
+        </div>
+        <span class="contact-arrow">↗</span>
+      </a>
+
+      <a class="contact-card" href="https://www.linkedin.com/in/eliasramiresjr/" target="_blank">
+        <div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">/in/eliasramiresjr/</div>
+        </div>
+        <span class="contact-arrow">↗</span>
+      </a>
+
+      <a class="contact-card" href="https://github.com/eliasramiresjr" target="_blank">
+        <div>
+          <div class="contact-label">Github</div>
+          <div class="contact-value">/eliasramiresjr</div>
+        </div>
+        <span class="contact-arrow">↗</span>
+      </a>
+
+      <!-- <a class="contact-card" href="tel:+5519998668849">
+        <div>
+          <div class="contact-label">Telefone</div>
+          <div class="contact-value">+55 (19) 99866-8849</div>
+        </div>
+        <span class="contact-arrow">↗</span>
+      </a> -->
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer-copy">2026 © Elias Ramires Júnior</p>
+    <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Voltar ao topo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+      </svg>
+    </button>
+  </footer>
+
+</div>
+
+<!-- MODAL DE PROJETO -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <div class="modal-img-container">
+      <img id="modal-img" src="" alt="Projeto" />
+    </div>
+    <div class="modal-body">
+      <h2 id="modal-title" class="project-name" style="font-size: 24px; margin-bottom: 4px;">Título</h2>
+      <p id="modal-cat" class="project-cat" style="margin-bottom: 20px; font-size: 14px;">Categoria</p>
+      <p id="modal-desc" class="section-text" style="flex: 1; margin-bottom: 28px;">
+        Este projeto pode ser visualizado com mais detalhes diretamente na respectiva página, contemplando códigos, tecnologias e implementações.
+      </p>
+      <a id="modal-link" class="btn btn-dark" href="#" target="_blank" style="display: inline-flex; width: 100%; justify-content: center; padding: 14px 20px; margin-top: auto;">
+        Acessar Projeto
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
