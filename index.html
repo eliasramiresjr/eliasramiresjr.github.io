@@ -75,13 +75,13 @@
           </svg>
           Download do CV
         </a>
-        <a class="btn btn-outline" href="mailto:[ramires_junior11@hotmail.com]">Contato</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/eliasramiresjr/">LinkedIn</a>
       </div>
     </div>
     <!-- PROFILE PICTURE -->
-    <!-- <div class="hero-photo">
-      <img src="./images/profile.png" alt="Leandro Banin" />
-    </div> -->
+    <div class="hero-photo">
+      <img src="./images/profile.png" alt="Elias Ramires Júnior" />
+    </div>
   </section>
 
   <!-- OVERVIEW -->
@@ -93,7 +93,6 @@
     </div>
   </section>
 
-
   <!-- EXPERIENCE -->
   <section class="section">
     <p class="section-label">Experiências</p>
@@ -101,8 +100,8 @@
       <div class="entry">
         <div class="entry-icon"><span class="entry-icon-letter">QA</span></div>
         <div class="entry-body">
-          <span class="entry-org">Estagiário</span>
-          <h3 class="entry-role">QA Tester</h3>
+          <span class="entry-org">Instituto de Pesquisas Eldorado</span>
+          <h3 class="entry-role">QA Tester - Estagiário</h3>
           <p class="entry-desc">
             - Criação e execução de testes funcionais, smoke, regressão e end-to-end (E2E).<br>
             - Elaboração de cenários e casos de teste com foco na qualidade do produto.<br>
@@ -124,8 +123,8 @@
       <div class="entry">
         <div class="entry-icon"><span class="entry-icon-letter">QA</span></div>
         <div class="entry-body">
-          <span class="entry-org">Temporário</span>
-          <h3 class="entry-role">QA Tester</h3>
+          <span class="entry-org">WiseVAs</span>
+          <h3 class="entry-role">QA Tester - Temporário</h3>
           <p class="entry-desc">
             - Atuei na análise de requisitos, planejamento e execução de testes.<br>
             - Auxiliei na atualização de documentação de testes, fluxos e regras identificadas para criar casos de teste, cenários e checklists baseados nas regras de negócio.<br>
@@ -144,8 +143,8 @@
       <div class="entry">
         <div class="entry-icon"><span class="entry-icon-letter">QA</span></div>
         <div class="entry-body">
-          <span class="entry-org">Estagiário</span>
-          <h3 class="entry-role">QA Tester</h3>
+          <span class="entry-org">INDT - Instituto de Desenvolvimento Tecnológico</span>
+          <h3 class="entry-role">QA Tester - Estagiário</h3>
           <p class="entry-desc">
             - Realizei testes manuais, funcionais e exploratórios para garantir a qualidade e a estabilidade das versões de builds para Android.<br>
             - Realizei testes em builds Android customizadas para operadoras ATT, TMO e subsidiárias, assim como operadoras da América Latina.<br>
@@ -164,7 +163,45 @@
     </div>
   </section>
 
-  <!-- EDUCATION -->
+  <!-- PROJECTS -->
+  <!-- <section class="section projects-section">
+    <p class="section-label" data-translate="Projetos">Projetos</p>
+    <div class="projects-wrapper collapsed" id="projects-wrapper">
+      <div class="projects-grid" id="github-projects-container">
+        <p style="color: var(--ink-muted); font-size: 14px; grid-column: 1 / -1; text-align: center; padding: 20px;" data-translate="Carregando projetos do GitHub...">Carregando projetos do GitHub...</p>
+      </div>
+      <div class="projects-overlay" id="projects-overlay">
+        <button class="view-more-btn" id="view-more-projects-btn" data-translate="Ver mais">Ver mais</button>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- MODAL DE PROJETO -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-img-container">
+        <img id="modal-img" src="" alt="Projeto" />
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-title" class="project-name" style="font-size: 24px; margin-bottom: 4px;">Título</h2>
+        <p id="modal-cat" class="project-cat" style="margin-bottom: 20px; font-size: 14px;">Categoria</p>
+        <p id="modal-desc" class="section-text" style="flex: 1; margin-bottom: 28px;">
+          Este projeto pode ser visualizado com mais detalhes diretamente na respectiva página, contemplando códigos, tecnologias e implementações.
+        </p>
+        <a id="modal-link" class="btn btn-dark" href="#" target="_blank" style="display: inline-flex; width: 100%; justify-content: center; padding: 14px 20px; margin-top: auto;">
+          Acessar Projeto
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <!-- EDUCATION -->
   <section class="section">
     <p class="section-label">Educação</p>
     <div class="entries">
@@ -193,21 +230,51 @@
   </section>
 
   <!-- CERTIFICATIONS -->
-  <!-- <section class="section">
+  <section class="section">
     <p class="section-label">Cursos</p>
     <div class="certs">
-      <a class="cert" href="https://www.udemy.com/" target="_blank">
+      <a class="cert" target="_blank">
         <div>
-          <div class="cert-name">Django Web Framework com Python, HTML e CSS</div>
-          <div class="cert-date">Outubro 2025</div>
+          <div class="cert-name">Inglês - Aslan</div>
+          <div class="cert-date">2019</div>
         </div>
         <span class="cert-arrow">↗</span>
       </a>
     </div>
-  </section> -->
+
+    <div class="certs">
+      <a class="cert" href="https://www.linkedin.com/in/eliasramiresjr/overlay/Certifications/302464453/treasury/?profileId=ACoAADu45ToBxusfjeHqoDyK8SMcDaxNGPBg6RM" target="_blank">
+        <div>
+          <div class="cert-name">Jornada QA - EBAC</div>
+          <div class="cert-date">2025</div>
+        </div>
+        <span class="cert-arrow">↗</span>
+      </a>
+    </div>
+
+    <div class="certs">
+      <a class="cert" href="https://www.linkedin.com/in/eliasramiresjr/overlay/Certifications/2027566530/treasury/?profileId=ACoAADu45ToBxusfjeHqoDyK8SMcDaxNGPBg6RM" target="_blank">
+        <div>
+          <div class="cert-name">Git na prática - Academy talentos</div>
+          <div class="cert-date">2023</div>
+        </div>
+        <span class="cert-arrow">↗</span>
+      </a>
+    </div>
+
+    <div class="certs">
+      <a class="cert" href="https://www.linkedin.com/in/eliasramiresjr/overlay/Certifications/1904458288/treasury/?profileId=ACoAADu45ToBxusfjeHqoDyK8SMcDaxNGPBg6RM" target="_blank">
+        <div>
+          <div class="cert-name">Curso Gratuito de Introdução aos Testes de API Rest</div>
+          <div class="cert-date">2024</div>
+        </div>
+        <span class="cert-arrow">↗</span>
+      </a>
+    </div>
+  </section>
 
   <!-- LANGUAGES -->
-  <!-- <section class="section">
+  <section class="section">
     <p class="section-label">Idiomas</p>
     <div class="entries">
       <div class="entry">
@@ -215,17 +282,27 @@
         <div class="entry-body">
           <span class="entry-org">Nível B1 - Conversação e Interpretação Textual</span>
           <h3 class="entry-role">Inglês</h3>
-          <p class="entry-desc">Inglês intermediário</p>
+          <p class="entry-desc">Intermediário</p>
         </div>
       </div>
     </div>
-  </section> -->
+
+    <div class="entries">
+      <div class="entry">
+        <div class="entry-icon"><span class="entry-icon-letter">P</span></div>
+        <div class="entry-body">
+          <span class="entry-org">Nativo</span>
+          <h3 class="entry-role">Português</h3>
+          <p class="entry-desc">Fluente</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- TOOLS -->
   <section class="section">
     <p class="section-label">Ferramentas</p>
     <div class="tools-grid">
-
       <a class="tool-card" href="https://developer.microsoft.com/pt-br/javascript/" target="_blank">
         <div class="tool-icon"><img src="https://img.icons8.com/?size=28&id=PXTY4q2Sq2lG&format=png&color=000000" alt="Javascript"></div>
         <div>
@@ -274,29 +351,21 @@
         </div>
       </a>
 
-      <!-- <a class="tool-card" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+      <a class="tool-card" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
         <div class="tool-icon"><img src="https://img.icons8.com/?size=28&id=v8RpPQUwv0N8&format=png&color=000000" alt="HTML"></div>
         <div>
           <div class="tool-name">HTML</div>
           <div class="tool-sub">Linguagem de Marcação</div>
         </div>
-      </a> -->
+      </a>
 
-      <!-- <a class="tool-card" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
+      <a class="tool-card" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
         <div class="tool-icon"><img src="https://img.icons8.com/?size=28&id=7gdY5qNXaKC0&format=png&color=000000" alt="CSS"></div>
         <div>
           <div class="tool-name">CSS</div>
           <div class="tool-sub">Linguagem de Estilo</div>
         </div>
-      </a> -->
-
-      <!-- <a class="tool-card" href="https://nodejs.org/en" target="_blank">
-        <div class="tool-icon"><img src="https://img.icons8.com/?size=28&id=hsPbhkOH4FMe&format=png&color=000000" alt="Node.js"></div>
-        <div>
-          <div class="tool-name">Node.js</div>
-          <div class="tool-sub">Ambiente de Execução</div>
-        </div>
-      </a> -->
+      </a>
 
     </div>
   </section>
@@ -305,30 +374,13 @@
   <section class="section">
     <p class="section-label">Contato</p>
     <div class="contact-grid">
-
-      <a class="contact-card" href="ramires_junior11@hotmail.com">
-        <div>
-          <div class="contact-label">E-mail</div>
-          <div class="contact-value">ramires_junior11@hotmail.com</div>
-        </div>
-        <span class="contact-arrow">↗</span>
-      </a>
-
-      <a class="contact-card" href="https://www.linkedin.com/in/eliasramiresjr/" target="_blank">
+      <!-- <a class="contact-card" href="https://www.linkedin.com/in/eliasramiresjr/" target="_blank">
         <div>
           <div class="contact-label">LinkedIn</div>
           <div class="contact-value">/in/eliasramiresjr/</div>
         </div>
         <span class="contact-arrow">↗</span>
-      </a>
-
-      <a class="contact-card" href="https://github.com/eliasramiresjr" target="_blank">
-        <div>
-          <div class="contact-label">Github</div>
-          <div class="contact-value">/eliasramiresjr</div>
-        </div>
-        <span class="contact-arrow">↗</span>
-      </a>
+      </a> -->
 
       <!-- <a class="contact-card" href="tel:+5519998668849">
         <div>
@@ -338,6 +390,21 @@
         <span class="contact-arrow">↗</span>
       </a> -->
 
+      <a class="contact-card" href="mailto:ramires_junior11@hotmail.com">
+        <div>
+          <div class="contact-label">E-mail</div>
+          <div class="contact-value">ramires_junior11@hotmail.com</div>
+        </div>
+        <span class="contact-arrow">↗</span>
+      </a>
+
+      <a class="contact-card" href="https://github.com/eliasramiresjr" target="_blank">
+        <div>
+          <div class="contact-label">Github</div>
+          <div class="contact-value">eliasramiresjr</div>
+        </div>
+        <span class="contact-arrow">↗</span>
+      </a>
     </div>
   </section>
 
@@ -349,32 +416,6 @@
       </svg>
     </button>
   </footer>
-
-</div>
-
-<!-- MODAL DE PROJETO -->
-<div id="project-modal" class="modal">
-  <div class="modal-content">
-    <span class="modal-close">&times;</span>
-    <div class="modal-img-container">
-      <img id="modal-img" src="" alt="Projeto" />
-    </div>
-    <div class="modal-body">
-      <h2 id="modal-title" class="project-name" style="font-size: 24px; margin-bottom: 4px;">Título</h2>
-      <p id="modal-cat" class="project-cat" style="margin-bottom: 20px; font-size: 14px;">Categoria</p>
-      <p id="modal-desc" class="section-text" style="flex: 1; margin-bottom: 28px;">
-        Este projeto pode ser visualizado com mais detalhes diretamente na respectiva página, contemplando códigos, tecnologias e implementações.
-      </p>
-      <a id="modal-link" class="btn btn-dark" href="#" target="_blank" style="display: inline-flex; width: 100%; justify-content: center; padding: 14px 20px; margin-top: auto;">
-        Acessar Projeto
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;">
-          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-          <polyline points="15 3 21 3 21 9"></polyline>
-          <line x1="10" y1="14" x2="21" y2="3"></line>
-        </svg>
-      </a>
-    </div>
-  </div>
 </div>
 
 <script src="script.js"></script>

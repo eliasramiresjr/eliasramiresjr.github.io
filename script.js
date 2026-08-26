@@ -209,52 +209,59 @@ const translations = {
   "Site Portfólio": "Portfolio Website",
   "Portfólio para apresentar projetos pessoais": "Portfolio to showcase personal projects",
   "Experiências": "Experience",
-  "Freelancer": "Freelance",
-  "Desenvolvedor de Sistemas": "Systems Developer",
-  "Desenvolvimento de sistemas por demanda, utilizando tecnologias como: Java, Python e Javascript. Integração com APIs e BDs. Uso de Frameworks como React, Node.js e SpringBoot.": "On-demand systems development, using technologies such as: Java, Python, and Javascript. Integration with APIs and DBs. Use of Frameworks like React, Node.js, and SpringBoot.",
-  "📅 Março 2020 – Atual": "📅 March 2020 – Present",
-  "📍 Porto Ferreira, SP (Home-Office)": "📍 Porto Ferreira, SP (Remote)",
-  "Casa Verona Padaria Artesanal e Café Bar": "Casa Verona Artisanal Bakery and Coffee Bar",
-  "Barista & Especialização em Cafés Especiais": "Barista & Specialization in Specialty Coffees",
-  "Preparo de bebidas à base de café com foco em qualidade e padronização. Atendimento ao cliente, organização de estoque/insumos e eficiência em ambientes de alta demanda.": "Preparation of coffee-based drinks focusing on quality and standardization. Customer service, inventory/supplies organization, and efficiency in high-demand environments.",
-  "📅 Julho 2024 – Março 2026": "📅 July 2024 – March 2026",
-  "Auxiliar de Produção": "Production Assistant",
-  "Montagem e controle de qualidade de componentes para chaves e motores. Organização de processos produtivos, manuseio de peças e atenção aos padrões de qualidade em ambiente industrial.": "Assembly and quality control of components for switches and motors. Organization of production processes, handling of parts, and attention to quality standards in an industrial environment.",
-  "📅 Junho 2023 – Outubro 2023": "📅 June 2023 – October 2023",
+  "QA Tester - Estagiário": "QA Tester - Intern",
+  "QA Tester - Temporário": "QA Tester - Temporary",
+  "📍 Manaus, AM (Híbrido)":"📍 Manaus, AM (Hybrid)",
+  "📍 Estados Unidos, US (Remoto)":"📍 United States, US (Remote)",
+  // Instituto de Pesquisas Eldorado
+  "- Criação e execução de testes funcionais, smoke, regressão e end-to-end (E2E).": "- Creation and execution of functional, smoke, regression, and end-to-end (E2E) tests.",
+  "- Elaboração de cenários e casos de teste com foco na qualidade do produto.": "- Development of test scenarios and test cases focused on product quality.",
+  "- Colaboração com equipes de desenvolvimento e produto durante o ciclo de desenvolvimento.": "- Collaboration with development and product teams during the development cycle.",
+  "- Identificação, registro e acompanhamento de bugs utilizando Jira.": "- Identification, logging, and tracking of bugs using Jira.",
+  "- Desenvolvimento e manutenção de testes automatizados para aplicações Web utilizando Robot Framework e Python.": "- Development and maintenance of automated tests for web applications using Robot Framework and Python.",
+  "- Automação de testes para aplicações Android com Appium integrado ao Robot Framework.": "- Test automation for Android applications using Appium integrated with Robot Framework.",
+  "- Desenvolvimento de testes automatizados para APIs REST, validando requisições, respostas, autenticação e regras de negócio.": "- Development of automated tests for REST APIs, validating requests, responses, authentication, and business rules.",
+  "- Manutenção e evolução das suítes de testes automatizados, buscando aumentar a cobertura e a confiabilidade das validações.": "- Maintenance and evolution of automated test suites, aiming to increase coverage and the reliability of validations.",
+  "- Execução de automações em pipelines de Jenkins, contribuindo para a integração contínua e validação das entregas.": "- Implementation of automation within Jenkins pipelines, contributing to continuous integration and the validation of deliverables.",
+  "📅 2025 – Atual": "📅 2025 – Present",
+  // WiseVAs
+  "- Atuei na análise de requisitos, planejamento e execução de testes.":"- I worked on requirements analysis, planning, and test execution.",
+  "- Auxiliei na atualização de documentação de testes, fluxos e regras identificadas para criar casos de teste, cenários e checklists baseados nas regras de negócio.":"- Assisted in updating test documentation, flows, and rules identified to create test cases, scenarios, and checklists based on business rules.",
+  "- Mapeei e compreendi fluxos simples de gestão para apoiar decisões do time, analisar requisitos e levantar dúvidas para garantir clareza e entendimento.":"- I mapped out and understood simple management workflows to support team decisions, analyze requirements, and raise questions to ensure clarity and understanding.",
+  "- Colaborei com o time para garantir entregas com qualidade e aprendizado contínuo.":"- I collaborated with the team to ensure quality deliverables and continuous learning.",
+  "- Realizei testes manuais, funcionais e exploratórios para garantir a qualidade e a estabilidade das versões de software.":"- Conducted manual, functional, and exploratory tests to ensure the quality and stability of software versions.",
+  "- Registrei de bugs de forma detalhada na plataforma Click Up, colaborando na priorização de correções com as equipes de desenvolvimento.":"- Logged detailed bug reports on the ClickUp platform, collaborating with development teams to prioritize fixes.",
+  // INDT - Instituto de Desenvolvimento Tecnológico
+  "- Realizei testes manuais, funcionais e exploratórios para garantir a qualidade e a estabilidade das versões de builds para Android.":"- Conducted manual, functional, and exploratory tests to ensure the quality and stability of Android build versions.",
+  "- Realizei testes em builds Android customizadas para operadoras ATT, TMO e subsidiárias, assim como operadoras da América Latina.":"- I conducted tests on custom Android builds for carriers such as AT&T, T-Mobile, and their subsidiaries, as well as carriers in Latin America.",
+  "- Executei testes automatizados Google como CTS, GTS, VTS e outros, validando builds para que as mesmas chegassem ao cliente final atendendo os requisitos google.":"- Executed automated Google tests such as CTS, GTS, VTS, and others, validating builds to ensure they met Google's requirements before reaching the end customer.",
+  "- Executei testes automatizados usando framework interno otimizando o processo de validação e aumentando a eficiência das entregas.":"- Executed automated tests using an internal framework, optimizing the validation process and increasing delivery efficiency.",
+  "- Registrei e documentei bugs detalhadamente nas plataformas Jira e Confluence, colaborando na priorização de correções com as equipes de desenvolvimento.":"- Logged and documented bugs in detail on Jira and Confluence, collaborating with development teams to prioritize fixes.",
+  "- Participei da criação e edição de casos de teste, alinhando com os requisitos e cenários de usuário para garantir cobertura completa.":"- I participated in creating and editing test cases, aligning them with requirements and user scenarios to ensure complete coverage.",
+  "- Apliquei metodologias ágeis, como Scrum e Kanban, para garantir a qualidade contínua do software, integrando os testes ao fluxo de desenvolvimento de forma colaborativa e eficiente.":"- I applied agile methodologies, such as Scrum and Kanban, to ensure continuous software quality, integrating testing into the development workflow in a collaborative and efficient manner.",
+  // Educação
   "Educação": "Education",
-  "Unicesumar (Ensino à Distância - EaD)": "Unicesumar (Distance Learning)",
-  "Bacharelado em Análise e Desenvolvimento de Sistemas - Tecnologia em Informática": "Bachelor of Systems Analysis and Development - Information Technology",
-  "Formação voltada para desenvolvimento de software, lógica de programação e fundamentos de banco de dados. Aprendizado contínuo e aplicação prática.": "Degree focused on software development, programming logic, and database fundamentals. Continuous learning and practical application.",
-  "📅 Outubro 2025 – Atual": "📅 October 2025 – Present",
-  "📍 Online - EaD": "📍 Online - Distance Learning",
-  "Bacharelado em Sistemas de Informação - Tecnologia em Informática (1° ao 3° semestre)": "Bachelor of Information Systems - Information Technology (1st to 3rd semester)",
-  "📅 Fevereiro 2023 – Agosto 2024": "📅 February 2024 – August 2025",
+  "Engenharia de Software": "Software Engineering",
+  "Análise e Desenvolvimento de Sistemas": "Systems Analysis and Development",
+  // Cursos
   "Cursos": "Courses",
-  "Django Web Framework com Python, HTML e CSS": "Django Web Framework with Python, HTML and CSS",
-  "Outubro 2025": "October 2025",
-  "Inglês Avançado - Básico à Fluência": "Advanced English - Basic to Fluency",
-  "Fevereiro 2025": "February 2025",
-  "Indústria 4.0": "Industry 4.0",
-  "Março 2026": "March 2026",
-  "Tecnologias e educação: espaço para além da sala de aula": "Technologies and education: space beyond the classroom",
+  // Idiomas
   "Idiomas": "Languages",
   "Nível B1 - Conversação e Interpretação Textual": "Level B1 - Conversation and Textual Interpretation",
   "Inglês": "English",
-  "Inglês intermediário": "Intermediate English",
+  "Intermediário": "Intermediate",
+  "Nativo": "Native",
+  "Português": "Portuguese",
+  "Fluente": "Fluent",
   "Ver mais": "View more",
+  // Ferramentas
   "Ferramentas": "Tools",
   "Linguagem de Programação": "Programming Language",
-  "Containerização": "Containerization",
-  "Ambiente de Execução": "Runtime Environment",
-  "Banco de Dados": "Database",
   "Linguagem de Marcação": "Markup Language",
   "Linguagem de Estilo": "Style Language",
   "Controle de Versão": "Version Control",
   "Sistema Operacional": "Operating System",
-  "Framework": "Framework",
-  "Banco de Dados Relacional": "Relational Database",
-  "Ferramentas de Desenvolvimento": "Development Tools",
-  "Ambiente de Execução": "Runtime Environment",
+  // Contato
   "Telefone": "Phone",
   "Este projeto pode ser visualizado com mais detalhes diretamente na respectiva página, contemplando códigos, tecnologias e implementações.": "This project can be viewed in more detail directly on its respective page, covering code, technologies, and implementations.",
   "Acessar Projeto": "Access Project",
@@ -479,12 +486,11 @@ async function loadGitHubProjects() {
   const container = document.getElementById('github-projects-container');
   if (!container) return;
 
-  const githubUsername = 'leandrobanin';
+  const githubUsername = 'eliasramiresjr';
   const url = `https://api.github.com/users/${githubUsername}/repos?sort=updated&per_page=12`;
 
   const repositoriosIgnorados = [
-    'leandrobanin',
-    'leandrobanin.github.io'
+    'eliasramiresjr.github.io'
   ];
 
   try {
